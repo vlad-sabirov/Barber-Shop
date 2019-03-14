@@ -256,6 +256,26 @@ footer {
 .border-block {
   margin: 0 5px 0 5px;
 }
+@media only screen and (max-width: 1200px) {
+  footer {
+    height: 100%;
+  }
+  .footer--block-right {
+    float: right;
+    margin-top: -235px;
+  }
+  .border-social {
+    width: 215px;
+    height: 100px;
+    padding-top: 35px;
+  }
+  .footer--social-link > img {
+    width: 25px;
+  }
+  .fa > img {
+    width: 15px!important;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
