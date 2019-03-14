@@ -25,13 +25,19 @@
   height: 130px;
 }
 
-.input-div > input {
+.input-div > input, textarea {
   width: 100%;
   height: 70px;
   font-size: 17px;
   font-weight: 600;
   border: 1px solid @border-n;
   padding-left: 25px;
+}
+
+.input-div > textarea {
+  padding-top: 15px;
+  max-width: 100%;
+  min-width: 100%;
 }
 
 .input-div > input:hover {
@@ -89,8 +95,36 @@
 }
 
 .checkbox-add {
-  border: 1px solid @border-n!important;
+  border: 1px solid @border-n !important;
 }
 
+.checkbox-row--div {
+  margin-top: 25px
+}
 
+.checkbox-row--div > label {
+  font-size: 17px;
+}
 
+.btn-form {
+  background: @button--form-n;
+  color: #fff;
+  border-radius: 0;
+  height: 70px;
+  margin-top: 80px;
+}
+
+.btn-form:hover {
+  background: @button--form-h;
+  color: #fff;
+}
+
+.btn-form:focus {
+  background: @button--form-h;
+  color: #978374;
+}
+
+.btn-form:disabled {
+  background: @button--form-d;
+  color: #ffffff;
+}

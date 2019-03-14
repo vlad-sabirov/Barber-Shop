@@ -31,7 +31,7 @@
                 <li><a href="#">Контакты</a></li>
                 <li><a href="#">HTML ACADEMY</a></li>
                 <li class="nav-menu__right"><a href="#"><img class="login-png" src="img/login.png"
-                                                             alt=""><span>Войти</span></a></li>
+                                                             alt=""><span class="login-link">Войти</span></a></li>
             </ul>
         </div>
     </div>
@@ -75,7 +75,8 @@
             </div>
             <div class="row row-input">
                 <div class="col-md-12 input-div">
-                    <input class="form--input big-input" type="text" placeholder="Доп. информация для мастера">
+                    <textarea class="form--input big-input" type="text"
+                              placeholder="Доп. информация для мастера"></textarea>
                 </div>
             </div>
             <div class="row checkbox-row">
@@ -123,18 +124,24 @@
                     </div>
                 </div>
 
-                <div class="col-md-4"><input class="checkbox-add" type="checkbox" id="add-1"> <label for="add-1">Подкрасить бороду</label>
+                <div class="col-md-4 checkbox-row--div"><input class="checkbox-add" type="checkbox" id="add-1"> <label
+                        for="add-1">Подкрасить бороду</label>
                 </div>
-                <div class="col-md-4"><input class="checkbox-add" type="checkbox" id="add-2"> <label for="add-2">Причесать бороду</label>
+                <div class="col-md-4 checkbox-row--div"><input class="checkbox-add" type="checkbox" id="add-2"> <label
+                        for="add-2">Причесать бороду</label>
                 </div>
-                <div class="col-md-4"><input class="checkbox-add" type="checkbox" id="add-3"> <label for="add-3">Убрать седину</label></div>
-                <div class="col-md-4"><input class="checkbox-add" type="checkbox" id="add-4"> <label for="add-4">Накрутить усы</label></div>
-                <div class="col-md-4"><input class="checkbox-add" type="checkbox" id="add-5"> <label for="add-5">Подровнять виски</label>
+                <div class="col-md-4 checkbox-row--div"><input class="checkbox-add" type="checkbox" id="add-3"> <label
+                        for="add-3">Убрать седину</label></div>
+                <div class="col-md-4 checkbox-row--div"><input class="checkbox-add" type="checkbox" id="add-4"> <label
+                        for="add-4">Накрутить усы</label></div>
+                <div class="col-md-4 checkbox-row--div"><input class="checkbox-add" type="checkbox" id="add-5"> <label
+                        for="add-5">Подровнять виски</label>
                 </div>
-                <div class="col-md-4"><input class="checkbox-add" type="checkbox" id="add-6"> <label for="add-6">Отполировать сылину</label>
+                <div class="col-md-4 checkbox-row--div"><input class="checkbox-add" type="checkbox" id="add-6"> <label
+                        for="add-6">Отполировать сылину</label>
                 </div>
 
-                <button class="btn col-md-12">Отправить заявку</button>
+                <button class="btn col-md-12 btn-form">Отправить заявку</button>
             </div>
         </form>
     </div>
@@ -144,20 +151,30 @@
 
 <!-- Start   ../style/footer.less-->
 <footer>
-    <div class="col-md-4">
-        <p><b>БАРБЕРШОП БОРОДИНСКИЙ</b></p>
-        <p>г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
-        <p>Тел.: <a href="tel:">+7(812)555-66-66</a></p></div>
-    <div class="col-md-4">
-        <p>Давайте дружить</p>
-        <div class="border"><a href=""><img src="img/vk-icon-small.png" alt=""></a></div>
-        <div class="border"><a href=""><img src="img/facebook-icon-small.png" alt=""></a></div>
-        <div class="border"><a href=""><img src="img/insta-icon-small.png" alt=""></a></div>
-    </div>
-    <div class="col-md-4">
-        <p>Разработано:</p>
-        <div class="border-copy">
-            <p>HTML ACADEMY</p>
+    <div class="container">
+        <div class="row footer-row">
+            <div class="col-md-4 footer--block-left">
+                <p class="footer--title">БАРБЕРШОП БОРОДИНСКИЙ</p>
+                <p>г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+                <p>Тел.: <a class="footer--block-left--link" href="tel:">+7(812)555-66-66</a></p>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 footer--block-center">
+                <p>Давайте дружить!</p>
+                <div class="border border-block"><a class="footer--social-link" href=""><img src="img/vk-icon-small.png"
+                                                                                             alt=""></a></div>
+                <div class="border border-block"><a class="footer--social-link" href=""><img
+                        src="img/facebook-icon-small.png" alt=""></a></div>
+                <div class="border border-block"><a class="footer--social-link" href=""><img
+                        src="img/insta-icon-small.png" alt=""></a></div>
+            </div>
+
+            <div class="col-md-4 footer--block-right">
+                <p>Разработано:</p>
+                <div class="border">
+                    <a class="footer--html-link" href="">HTML ACADEMY</a>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
