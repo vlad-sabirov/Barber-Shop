@@ -32,6 +32,7 @@
   font-weight: 600;
   border: 1px solid @border-n;
   padding-left: 25px;
+  background: #fff !important;
 }
 
 .input-div > textarea {
@@ -45,6 +46,14 @@
 }
 
 .input-div > input:focus {
+  border: 1px solid @border-f;
+}
+
+.input-div > textarea:hover {
+  border: 1px solid @border-h;
+}
+
+.input-div > textarea:focus {
   border: 1px solid @border-f;
 }
 
@@ -127,4 +136,27 @@
 .btn-form:disabled {
   background: @button--form-d;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 991px) {
+
+  .home-btn {
+    display: none;
+  }
+
+  .input-div {
+    margin: 15px 0 15px 0;
+  }
+
+  .title-model--hr {
+    display: none;
+  }
+
+  .checbox-model {
+    height: 430px;
+  }
+
+  .checkbox-block {
+    text-align: center;
+  }
 }
