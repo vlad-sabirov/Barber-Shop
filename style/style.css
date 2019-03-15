@@ -61,6 +61,12 @@
     border: none;
     margin: 0;
   }
+  .nav-button {
+    background: #6a4d38;
+  }
+  .navbar-header {
+    background: #826550;
+  }
 }
 .fon--image-img {
   display: inline-block;
