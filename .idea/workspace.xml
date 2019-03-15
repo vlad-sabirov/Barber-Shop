@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee507de-a096-4735-bbe7-233501c5e9a9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/content-form.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/content-form.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/footer.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/footer.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/nav-navbar.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/nav-navbar.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/variables.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,17 +25,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="125" column="42" selection-start-line="125" selection-start-column="28" selection-end-line="125" selection-end-column="42" />
+            <state relative-caret-position="187">
+              <caret line="26" column="46" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/content-form.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="159" column="22" selection-start-line="159" selection-start-column="22" selection-end-line="159" selection-end-column="22" />
+            <state relative-caret-position="455">
+              <caret line="179" lean-forward="true" selection-start-line="179" selection-end-line="179" />
             </state>
           </provider>
         </entry>
@@ -48,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style/variables.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+            <state relative-caret-position="170">
+              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -69,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/nav-navbar.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="65" selection-start-line="65" selection-end-line="71" selection-end-column="1" />
+            <state relative-caret-position="523">
+              <caret line="79" selection-start-line="79" selection-end-line="81" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -108,11 +109,11 @@
         <option value="$PROJECT_DIR$/style/style.css" />
         <option value="$PROJECT_DIR$/style/style.less" />
         <option value="$PROJECT_DIR$/style/fon.less" />
-        <option value="$PROJECT_DIR$/style/variables.less" />
         <option value="$PROJECT_DIR$/style/footer.less" />
-        <option value="$PROJECT_DIR$/style/nav-navbar.less" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style/content-form.less" />
+        <option value="$PROJECT_DIR$/style/nav-navbar.less" />
+        <option value="$PROJECT_DIR$/style/variables.less" />
       </list>
     </option>
   </component>
@@ -184,12 +185,12 @@
       <workItem from="1552562691891" duration="2857000" />
       <workItem from="1552574043456" duration="2415000" />
       <workItem from="1552582973397" duration="13704000" />
-      <workItem from="1552673820441" duration="3798000" />
+      <workItem from="1552673820441" duration="6588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40980000" />
+    <option name="totallyTimeSpent" value="43770000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -207,7 +208,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3261105" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3261105" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -276,20 +277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/nav-navbar.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="65" selection-start-line="65" selection-end-line="71" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/footer.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
@@ -297,17 +284,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/style/nav-navbar.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="79" selection-start-line="79" selection-end-line="81" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="125" column="42" selection-start-line="125" selection-start-column="28" selection-end-line="125" selection-end-column="42" />
+        <state relative-caret-position="187">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/content-form.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="159" column="22" selection-start-line="159" selection-start-column="22" selection-end-line="159" selection-end-column="22" />
+        <state relative-caret-position="455">
+          <caret line="179" lean-forward="true" selection-start-line="179" selection-end-line="179" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
       </provider>
     </entry>

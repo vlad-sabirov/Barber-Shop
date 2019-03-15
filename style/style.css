@@ -56,6 +56,12 @@
     font-weight: 700;
   }
 }
+@media only screen and (max-width: 767px) {
+  .active {
+    border: none;
+    margin: 0;
+  }
+}
 .fon--image-img {
   display: inline-block;
   margin-top: 130px;
@@ -231,7 +237,19 @@ textarea {
     height: 430px;
   }
   .checkbox-block {
-    text-align: center;
+    padding-left: 50px;
+  }
+  .checkbox-div {
+    margin-top: 15px;
+  }
+  .checkbox-row--div > label {
+    font-size: 16px;
+  }
+  .title-model--border {
+    margin-top: 30px;
+  }
+  .row-input {
+    margin-bottom: 25px;
   }
 }
 .border {
