@@ -39,6 +39,9 @@
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+.hide-block {
+  display: none;
+}
 @media only screen and (max-width: 1199px) {
   .login-link {
     display: none;
@@ -55,6 +58,9 @@
     font-size: 13px;
     font-weight: 700;
   }
+  .icon-bar {
+    background: #fff;
+  }
 }
 @media only screen and (max-width: 767px) {
   .active {
@@ -62,10 +68,59 @@
     margin: 0;
   }
   .nav-button {
+    position: absolute;
     background: #6a4d38;
+    width: 70px;
+    height: 54px;
+    border-radius: 0;
+    margin: 0;
+    padding: 9px 15px;
+    right: 0px;
+    top: 0px;
+  }
+  .nav-button .icon-bar {
+    width: 35px;
+    border-radius: 1px;
   }
   .navbar-header {
     background: #826550;
+  }
+  .hide-block {
+    display: block;
+  }
+  .hide-block .hide {
+    display: none;
+  }
+  .hide-block .not-hide {
+    width: 100%;
+    border: 0;
+  }
+  .navbar-nav > li {
+    width: 100%;
+    border-bottom: 1px solid #71543f;
+    border-top: 1px solid #886e5b;
+  }
+  .nav-menu {
+    background: #826550;
+    margin: 0;
+    width: 100%;
+  }
+  .navbar-collapse {
+    margin-right: -31px !important;
+    margin-left: -31px !important;
+    margin-top: -1px;
+  }
+  .login-link {
+    display: inline;
+  }
+  .nav-menu__right {
+    background: #6a4d38;
+  }
+  .navbar-header {
+    margin-left: -16px !important;
+    margin-right: -16px !important;
+    margin-top: -1px !important;
+    border-bottom: 1px solid #71543f;
   }
 }
 .fon--image-img {
@@ -115,6 +170,40 @@
   border-bottom-width: 750px;
   border-bottom: 100px solid #f8f5f2;
   border-right: 0px solid #f8f5f2;
+}
+@media only screen and (max-width: 991px) {
+  .fon--image::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    left: 0;
+    border: 600px solid transparent;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 750px;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 750px;
+    border-bottom: 100px solid #f8f5f2;
+    border-left: 0px solid #f8f5f2;
+  }
+  .fon--image::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    border: 600px solid transparent;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 750px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 750px;
+    border-bottom: 100px solid #f8f5f2;
+    border-right: 0px solid #f8f5f2;
+  }
 }
 .content-form {
   background: #f8f5f2;
