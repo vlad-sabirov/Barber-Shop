@@ -50,7 +50,7 @@
   padding-right: 0 !important;
 }
 
-.hide-block {
+.hide-head-block {
   display: none;
 }
 
@@ -104,36 +104,54 @@
 
   .navbar-header {
     background: @navbar-header;
+    margin: 0 !important;
+    margin-top: -1px !important;
+    border-bottom: 1px solid @border-b-nav-adaptation;
+    padding: 0px !important;
+
   }
 
-  .hide-block {
+  .hide-menu {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: -1px;
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+
+  .head {
+    padding: 0 !important;
+  }
+
+  .hide-head-block {
     display: block;
 
     .hide {
       display: none;
     }
+
     .not-hide {
       width: 100%;
       border: 0;
+      padding: 17px 0 17px 0;
+      text-align: center;
+      list-style: none;
+      color: #fff;
     }
   }
 
-  .navbar-nav > li {
-    width: 100%;
-    border-bottom: 1px solid @border-b-nav-adaptation;
-    border-top: 1px solid @border-t-nav-adaptation;
-  }
-
-  .nav-menu {
+  .navbar-nav {
     background: @navbar-header;
     margin: 0;
     width: 100%;
-  }
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 
-  .navbar-collapse {
-    margin-right: -31px!important;
-    margin-left: -31px!important;
-    margin-top: -1px;
+    li {
+      width: 100%;
+      border-bottom: 1px solid @border-b-nav-adaptation;
+      border-top: 1px solid @border-t-nav-adaptation;
+    }
   }
 
   .login-link {
@@ -142,11 +160,5 @@
 
   .nav-menu__right {
     background: @nav-button;
-  }
-  .navbar-header {
-    margin-left: -16px!important;
-    margin-right: -16px!important;
-    margin-top: -1px!important;
-    border-bottom: 1px solid @border-b-nav-adaptation;
   }
 }
