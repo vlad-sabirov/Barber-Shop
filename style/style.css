@@ -1,3 +1,6 @@
+.mobile-logo {
+  display: none;
+}
 .nav-menu__right {
   float: right !important;
 }
@@ -25,9 +28,10 @@
   font-weight: 700;
 }
 .navbar {
-  border-radius: 0px;
+  border-radius: 0;
   margin-bottom: 0;
   z-index: 999;
+  border: 0;
 }
 .login-png {
   margin-right: 20px;
@@ -55,7 +59,7 @@
 }
 @media only screen and (max-width: 991px) {
   .navbar-nav > li > a {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
   }
   .icon-bar {
@@ -63,6 +67,16 @@
   }
 }
 @media only screen and (max-width: 767px) {
+  .hide-mobile {
+    display: none!important;
+  }
+  .mobile-logo {
+    display: block;
+    background: #242424;
+    height: 85px;
+    text-align: center;
+    padding-top: 25px;
+  }
   .active {
     border: none;
     margin: 0;
@@ -93,8 +107,8 @@
     margin-left: 0 !important;
     margin-right: 0 !important;
     margin-top: -1px;
-    padding-left: 0!important;
-    padding-right: 0!important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   .head {
     padding: 0 !important;
@@ -142,14 +156,14 @@
   width: 50%;
   bottom: 0;
   left: 0;
-  border: 950px solid transparent;
+  border: 1300px solid transparent;
   border-bottom-color: transparent;
   border-bottom-style: solid;
   border-bottom-width: 750px;
   border-left-color: transparent;
   border-left-style: solid;
   border-left-width: 750px;
-  border-bottom: 100px solid #f8f5f2;
+  border-bottom: 160px solid #f8f5f2;
   border-left: 0px solid #f8f5f2;
 }
 .fon {
@@ -170,15 +184,49 @@
   width: 50%;
   bottom: 0;
   right: 0;
-  border: 950px solid transparent;
+  border: 1300px solid transparent;
   border-right-color: transparent;
   border-right-style: solid;
   border-right-width: 750px;
   border-bottom-color: transparent;
   border-bottom-style: solid;
   border-bottom-width: 750px;
-  border-bottom: 100px solid #f8f5f2;
+  border-bottom: 160px solid #f8f5f2;
   border-right: 0px solid #f8f5f2;
+}
+@media only screen and (max-width: 1316px) {
+  .fon--image::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    border: 975px solid transparent;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 750px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 750px;
+    border-bottom: 160px solid #f8f5f2;
+    border-right: 0px solid #f8f5f2;
+  }
+  .fon--image::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    left: 0;
+    border: 975px solid transparent;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 750px;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 750px;
+    border-bottom: 160px solid #f8f5f2;
+    border-left: 0px solid #f8f5f2;
+  }
 }
 @media only screen and (max-width: 991px) {
   .fon--image::before {
@@ -212,6 +260,11 @@
     border-bottom-width: 750px;
     border-bottom: 100px solid #f8f5f2;
     border-right: 0px solid #f8f5f2;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .fon {
+    display: none;
   }
 }
 .content-form {
@@ -356,6 +409,24 @@ textarea {
     margin-bottom: 25px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .checkbox-block {
+    padding-left: 27%;
+  }
+  .btn-form {
+    margin: 0 35px;
+    margin-top: 80px;
+    width: 90%;
+  }
+  .form {
+    margin-bottom: 150px;
+  }
+}
+@media only screen and (max-width: 617px) {
+  .checkbox-block {
+    padding-left: 10%;
+  }
+}
 .border {
   border: 1px solid #3d3d3d !important;
   height: 50px;
@@ -379,11 +450,11 @@ footer {
 .footer-row {
   margin-top: 55px;
 }
-.footer--block-left--link {
+.title-footer--tel-link--link {
   color: inherit;
   text-decoration: none;
 }
-.footer--block-left--link:hover {
+.title-footer--tel-link--link:hover {
   color: inherit;
   text-decoration: none;
 }
@@ -422,7 +493,7 @@ footer {
   .border-social {
     width: 215px;
     height: 100px;
-    padding-top: 35px;
+    padding-top: 35px !important;
   }
   .footer--social-link > img {
     transform: scale(1.5);
@@ -430,6 +501,93 @@ footer {
   .bro {
     display: none;
   }
+}
+@media only screen and (max-width: 767px) {
+  footer::before,
+  footer::after {
+    content: "";
+    width: 50%;
+  }
+  footer::before {
+    left: 0;
+    float: left;
+    margin-top: -495px;
+    border: 395px solid transparent;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 750px;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 750px;
+    border-bottom: 100px solid #292929;
+    border-left: 0px solid #292929;
+  }
+  footer::after {
+    margin-top: -830px;
+    float: right;
+    border: 395px solid transparent;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 750px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 750px;
+    border-bottom: 100px solid #292929;
+    border-right: 0px solid #292929;
+  }
+  .title-footer {
+    text-align: center;
+  }
+  .title-footer--tel-link {
+    margin: 0 20px 0 20px;
+    border: 2px solid #3d3d3d !important;
+    display: block;
+    height: 50px;
+    padding: 12px 0 0 0;
+  }
+  .border {
+    border: 2px solid #3d3d3d !important;
+    margin-left: -11px;
+    padding: 0;
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  footer::before {
+    margin-top: -344px;
+    border: 245px solid transparent;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 750px;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 750px;
+    border-bottom: 100px solid #292929;
+    border-left: 0 solid #292929;
+  }
+  footer::after {
+    margin-top: -679px;
+    border: 245px solid transparent;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 750px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 750px;
+    border-bottom: 100px solid #292929;
+    border-right: 0 solid #292929;
+  }
+  footer {
+    height: 450px;
+  }
+  .footer--block-center {
+    margin-left: 5px;
+  }
+  .border {
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 427px) {
 }
 html {
   scroll-behavior: smooth;

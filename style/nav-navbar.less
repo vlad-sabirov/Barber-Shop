@@ -1,3 +1,7 @@
+.mobile-logo {
+  display: none;
+}
+
 .nav-menu__right {
   float: right !important;
 }
@@ -19,8 +23,8 @@
   color: #826550;
   background: #fff;
 }
-
 .navbar-nav > li > a:focus {
+
   color: #4d4d4d;
   background: #fff;
 }
@@ -28,14 +32,15 @@
 
 .navbar-nav > li > a {
   color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-}
+    font-size: 16px;
+    font-weight: 700;
+  }
 
 .navbar {
-  border-radius: 0px;
+  border-radius: 0;
   margin-bottom: 0;
   z-index: 999;
+  border: 0;
 }
 
 .login-png {
@@ -70,7 +75,7 @@
 @media only screen and (max-width: 991px) {
 
   .navbar-nav > li > a {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
   }
 
@@ -80,6 +85,19 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+  .hide-mobile {
+    display: none!important;
+  }
+
+  .mobile-logo {
+    display: block;
+    background: @mobile-background-header;
+    height: 85px;
+    text-align: center;
+    padding-top: 25px;
+  }
+
   .active {
     border: none;
     margin: 0;
@@ -115,8 +133,8 @@
     margin-left: 0 !important;
     margin-right: 0 !important;
     margin-top: -1px;
-    padding-left: 0!important;
-    padding-right: 0!important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .head {

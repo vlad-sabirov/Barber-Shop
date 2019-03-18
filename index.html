@@ -10,17 +10,15 @@
 </head>
 <body>
 
-
+<div class="mobile-logo">
+    <img src="img/logotype-mobile.png" alt="">
+</div>
 <!-- Start   ../style/nav-navbar.less-->
 <nav class="navbar" id="nav">
     <div class="container head">
         <div class="navbar-header">
             <div class="hide-head-block">
                 <li class="not-hide">Главная</li>
-                <li class="hide">Наши работы</li>
-                <li class="hide">Записаться</li>
-                <li class="hide">Контакты</li>
-                <li class="hide">HTML ACADEMY</li>
             </div>
             <button type="button" class="navbar-toggle collapsed nav-button" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -32,7 +30,7 @@
         </div>
         <div class="collapse navbar-collapse hide-menu" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav nav-menu">
-                <li class="hide"><a href="#" class="active">Главная</a></li>
+                <li class="not-hide hide-mobile"><a href="#" class="active">Главная</a></li>
                 <li><a href="#">Наши работы</a></li>
                 <li><a href="#">Записаться</a></li>
                 <li><a href="#">Контакты</a></li>
@@ -96,27 +94,27 @@
                 </div>
                 <div class="checbox-model">
                     <div class="col-md-1"></div>
-                    <div class="col-md-2 col-sm-4 checkbox-div">
+                    <div class="col-md-2 col-sm-4 col-xs-4 checkbox-div">
                         <input type="radio">
                         <p class="checkbox-p">Адмирал</p>
                         <img src="img/beard-1.png" alt="">
                     </div>
-                    <div class="col-md-2 col-sm-4 checkbox-div">
+                    <div class="col-md-2 col-sm-4 col-xs-4 checkbox-div">
                         <input type="radio">
                         <p class="checkbox-p">Лесоруб</p>
                         <img src="img/beard-2.png" alt="">
                     </div>
-                    <div class="col-md-2 col-sm-4 checkbox-div">
+                    <div class="col-md-2 col-sm-4 col-xs-4 checkbox-div">
                         <input type="radio">
                         <p class="checkbox-p">Полярник</p>
                         <img src="img/beard-3.png" alt="">
                     </div>
-                    <div class="col-md-2 col-sm-4 checkbox-div">
+                    <div class="col-md-2 col-sm-4 col-xs-4 checkbox-div">
                         <input type="radio">
                         <p class="checkbox-p">Боярин</p>
                         <img src="img/beard-4.png" alt="">
                     </div>
-                    <div class="col-md-2 col-sm-4 checkbox-div">
+                    <div class="col-md-2 col-sm-4 col-xs-4 checkbox-div">
                         <input type="radio">
                         <p class="checkbox-p">Мудрец</p>
                         <img src="img/beard-5.png" alt="">
@@ -154,7 +152,7 @@
                             for="add-6">Отполировать сылину</label>
                     </div>
                 </div>
-                <button class="btn col-md-12 col-sm-12 btn-form">Отправить заявку</button>
+                <button class="btn col-md-12 col-sm-12 col-xs-12 btn-form">Отправить заявку</button>
             </div>
         </form>
     </div>
@@ -166,13 +164,16 @@
 <footer>
     <div class="container">
         <div class="row footer-row">
-            <div class="col-lg-4 col-md-8 col-sm-8 footer--block-left">
-                <p class="footer--title">БАРБЕРШОП БОРОДИНСКИЙ</p>
-                <p>г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
-                <p>Тел.: <a class="footer--block-left--link" href="tel:">+7(812)555-66-66</a></p>
+            <div class="col-lg-4 col-md-8 col-sm-8 col-xs-12 footer--block-left">
+                <div class="title-footer">
+                    <p class="footer--title">БАРБЕРШОП БОРОДИНСКИЙ</p>
+                    <p>г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+                    <p class="title-footer--tel-link">Тел.: <a class="title-footer--tel-link--link"
+                                                                     href="tel:">+7(812)555-66-66</a></p>
+                </div>
             </div>
 
-            <div class="col-lg-4 col-md-12 col-sm-12 footer--block-center">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 footer--block-center">
                 <p class="bro">Давайте дружить!</p>
                 <div class="border border-social border-block vk-block"><a class="footer--social-link vk" href=""><img
                         src="img/vk-icon-small.png"
@@ -183,7 +184,7 @@
                         src="img/insta-icon-small.png" alt=""></a></div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-4 footer--block-right">
+            <div class="col-lg-4 col-md-4 col-sm-4 hide-mobile footer--block-right">
                 <p>Разработано:</p>
                 <div class="border">
                     <a class="footer--html-link" href="">HTML ACADEMY</a>
