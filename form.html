@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Barber Shop</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.min.css">
+</head>
+<body>
+
+<div class="mobile-logo">
+    <img src="img/logotype-mobile.png" alt="">
+</div>
+<!-- Start   ../style/nav-navbar.less-->
+<nav class="navbar" id="nav">
+    <div class="container head">
+        <div class="navbar-header">
+            <div class="hide-head-block">
+                <li class="not-hide">Главная</li>
+            </div>
+            <button type="button" class="navbar-toggle collapsed nav-button" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse hide-menu" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav nav-menu">
+                <li class="not-hide hide-mobile"><a href="#" class="active">Главная</a></li>
+                <li><a href="#">Наши работы</a></li>
+                <li><a href="#">Записаться</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">HTML ACADEMY</a></li>
+                <li class="nav-menu__right"><a href="#"><img class="login-png" src="img/login.png"
+                                                             alt=""><span class="login-link">Войти</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End   ../style/nav-navbar.less-->
+
+
+<!-- Start   ../style/fon.less-->
+<div class="fon">
+
+    <div class="fon--image">
+        <img class="fon--image-img" src="img/logo.png" alt="">
+    </div>
+</div>
+<!-- End   ../style/fon.less-->
+
+
+<!-- Start   ../style/content-form.less-->
+<div class="content-form">
+    <div class="container">
+        <form class="form" action="">
+
+            <div class="row title-row w130">
+                <div class="col-md-7">
+                    <h1><b>Запись на стрижку</b></h1>
+                </div>
+                <div class="col-md-5 home w130">
+                    <a href="#nav" class="btn home-btn">На главную</a>
+                </div>
+            </div>
+            <div class="row row-input">
+                <div class="col-md-4 input-div"><input class="form--input" type="text" placeholder="Имя"></div>
+                <div class="col-md-4 input-div"><input class="form--input" type="text" placeholder="Фамилия"></div>
+                <div class="col-md-4 input-div"><input class="form--input" type="text" placeholder="Отчество"></div>
+            </div>
+            <div class="row row-input">
+                <div class="col-md-6 input-div"><input class="form--input" type="tel" placeholder="Контактный номер">
+                </div>
+                <div class="col-md-6 input-div"><input class="form--input" type="email" placeholder="Контактный e-mail">
+                </div>
+            </div>
+            <div class="row row-input">
+                <div class="col-md-12 input-div">
+                    <textarea class="form--input big-input" type="text"
+                              placeholder="Доп. информация для мастера"></textarea>
+                </div>
+            </div>
+            <div class="row checkbox-row">
+                <div class="title-model">
+                    <div class="col-md-12 title-model--border">
+                        <hr class="col-md-3 title-model--hr">
+                        <div class="col-md-5 model-beard"><h3>ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ</h3></div>
+                        <hr class="col-md-3 title-model--hr">
+                    </div>
+                </div>
+                <div class="checbox-model">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-2 col-sm-4 col-xs-4 checkbox-div">
+                        <input type="radio">
+                        <p class="checkbox-p">Адмирал</p>
+                        <img src="img/beard-1.png" alt="">
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-4 checkbox-div">
+                        <input type="radio">
+                        <p class="checkbox-p">Лесоруб</p>
+                        <img src="img/beard-2.png" alt="">
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-4 checkbox-div">
+                        <input type="radio">
+                        <p class="checkbox-p">Полярник</p>
+                        <img src="img/beard-3.png" alt="">
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-4 checkbox-div">
+                        <input type="radio">
+                        <p class="checkbox-p">Боярин</p>
+                        <img src="img/beard-4.png" alt="">
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-4 checkbox-div">
+                        <input type="radio">
+                        <p class="checkbox-p">Мудрец</p>
+                        <img src="img/beard-5.png" alt="">
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="title-model">
+                    <div class="col-md-12 title-model--border">
+                        <hr class="col-md-3 title-model--hr">
+                        <div class="col-md-5 model-beard"><h3>Дополнительные услуги</h3></div>
+                        <hr class="col-md-3 title-model--hr">
+                    </div>
+                </div>
+                <div class="checkbox-block">
+                    <div class="col-md-4 col-sm-4 checkbox-row--div"><input class="checkbox-add" type="checkbox"
+                                                                            id="add-1"> <label
+                            for="add-1">Подкрасить бороду</label>
+                    </div>
+                    <div class="col-md-4 col-sm-4 checkbox-row--div"><input class="checkbox-add" type="checkbox"
+                                                                            id="add-2"> <label
+                            for="add-2">Причесать бороду</label>
+                    </div>
+                    <div class="col-md-4 col-sm-4 checkbox-row--div"><input class="checkbox-add" type="checkbox"
+                                                                            id="add-3"> <label
+                            for="add-3">Убрать седину</label></div>
+                    <div class="col-md-4 col-sm-4 checkbox-row--div"><input class="checkbox-add" type="checkbox"
+                                                                            id="add-4"> <label
+                            for="add-4">Накрутить усы</label></div>
+                    <div class="col-md-4 col-sm-4 checkbox-row--div"><input class="checkbox-add" type="checkbox"
+                                                                            id="add-5"> <label
+                            for="add-5">Подровнять виски</label>
+                    </div>
+                    <div class="col-md-4 col-sm-4 checkbox-row--div"><input class="checkbox-add" type="checkbox"
+                                                                            id="add-6"> <label
+                            for="add-6">Отполировать сылину</label>
+                    </div>
+                </div>
+                <button class="btn col-md-12 col-sm-12 col-xs-12 btn-form">Отправить заявку</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- End   ../style/content-form.less-->
+
+
+<!-- Start   ../style/footer.less-->
+<footer>
+    <div class="container">
+        <div class="row footer-row">
+            <div class="col-lg-4 col-md-8 col-sm-8 col-xs-12 footer--block-left">
+                <div class="title-footer">
+                    <p class="footer--title">БАРБЕРШОП БОРОДИНСКИЙ</p>
+                    <p>г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+                    <p class="title-footer--tel-link">Тел.: <a class="title-footer--tel-link--link"
+                                                                     href="tel:">+7(812)555-66-66</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 footer--block-center">
+                <p class="bro">Давайте дружить!</p>
+                <div class="border border-social border-block vk-block"><a class="footer--social-link vk" href=""><img
+                        src="img/vk-icon-small.png"
+                        alt=""></a></div>
+                <div class="border border-social border-block fa-block"><a class="footer--social-link fa" href=""><img
+                        src="img/facebook-icon-small.png" alt=""></a></div>
+                <div class="border border-social border-block in-block"><a class="footer--social-link in" href=""><img
+                        src="img/insta-icon-small.png" alt=""></a></div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 hide-mobile footer--block-right">
+                <p>Разработано:</p>
+                <div class="border">
+                    <a class="footer--html-link" href="">HTML ACADEMY</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End   ../style/footer.less-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
