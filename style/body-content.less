@@ -1,0 +1,283 @@
+h1 {
+  margin: 0;
+}
+
+.grey {
+  background: @grey-body-index;
+  padding-bottom: 175px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    bottom: -464px;
+    left: 0;
+    border: 1300px solid transparent;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 750px;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 750px;
+    border-bottom: 160px solid @bg-body;
+    border-left: 0px solid @bg-body;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    bottom: -464px;
+    right: 0;
+    border: 1300px solid transparent;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 750px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 750px;
+    border-bottom: 160px solid @bg-body;
+    border-right: 0px solid @bg-body;
+  }
+
+  .absolute {
+    position: absolute;
+    top: 542px;
+    z-index: 999;
+    min-width: 1140px;
+  }
+}
+
+.grey-top {
+  height: 250px;
+}
+
+.grey-top--left {
+  background: #ffffff;
+  height: 100%;
+  padding: 40px;
+
+  h1 {
+    font-weight: 600;
+    margin-bottom: 55px;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+
+  span {
+    color: #b2b2b2;
+  }
+}
+
+.grey-top--center {
+  height: 100%;
+  padding: 0;
+
+  span {
+    color: #ffffff;
+    font-size: 50px;
+  }
+
+  p {
+    color: #ffffff;
+  }
+
+  &--top {
+    background: @grey-absol-top;
+  }
+
+  &--bottom {
+    background: @grey-body-index;
+  }
+
+  &--bottom, &--top {
+    height: 50%;
+    padding: 35px 0 25px 40px;
+  }
+
+
+}
+
+.grey-top--right {
+  height: 100%;
+  padding: 0;
+
+  span {
+    color: #ffffff;
+    font-size: 50px;
+  }
+
+  p {
+    color: #ffffff;
+  }
+
+  &--bottom, &--top {
+    height: 50%;
+    padding: 35px 0 25px 40px;
+  }
+
+  &--bottom {
+    background: @grey-absol-bottom-right;
+  }
+
+  &--top {
+    background: @grey-absol-top-right;
+  }
+}
+
+.grey-center {
+  color: #fff;
+
+  .grey-center--center, .grey-center--left, .grey-center--right {
+    text-align: center;
+
+    img {
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.white {
+  background: @bg-body;
+  padding-top: 30px;
+
+  .white-top {
+    border-bottom: 1px solid @border-n;
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+  }
+}
+
+
+.white--title {
+  height: 100px;
+
+  h1 {
+    float: left;
+    font-weight: 600;
+  }
+
+  a {
+    float: right;
+    color: #000;
+    font-weight: 600;
+  }
+
+  &--block {
+
+    p {
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    .banner {
+      height: 89px;
+      width: 50px;
+      float: left;
+      text-align: center;
+      background: #000;
+      font-size: 25px;
+      color: #fff;
+      margin-right: 15px;
+      margin-top: 15px;
+
+      span {
+        font-size: 14px;
+        margin-top: -6px;
+        display: block;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 7%;
+        border: 53px solid transparent;
+        margin-top: -51px;
+        margin-left: -28px;
+        border-bottom: 43px solid @bg-body;
+        border-right: 0 solid @bg-body;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 7%;
+        border: 50px solid transparent;
+        border-bottom: 39px solid @bg-body;
+        border-left: 0 solid @bg-body;
+        margin-left: -12px;
+      }
+    }
+
+    //@bg-body
+  }
+
+  &--border {
+    width: 160px;
+    height: 50px;
+    border: 1px solid @border-n;
+    padding-top: 12px;
+
+    &:hover {
+      border: 1px solid @border-h;
+    }
+  }
+}
+
+.white-bottom--carousell {
+
+  &--content {
+    &--img {
+      float: left;
+      margin-right: 30px;
+      height: 160px;
+    }
+
+    &--feedback {
+      border: 1px solid @border-n;
+      height: 160px;
+    }
+  }
+
+  &--left {
+    height: 160px;
+    width: 50px;
+    border: 1px solid @border-n;
+    padding: 65px 15px 15px 18px;
+    margin-right: 20px;
+  }
+
+  &--right {
+    height: 160px;
+    width: 50px;
+    border: 1px solid @border-n;
+    padding: 65px 15px 15px 18px;
+  }
+
+  &--rhombus {
+    &--el {
+      div {
+        width: 10px;
+        height: 10px;
+        background-size: cover;
+        background: url(../img/slider-indicator.png) no-repeat;
+      }
+    }
+
+  }
+
+  .active-rhombus {
+    div {
+      width: 10px;
+      height: 10px;
+      background: url(../img/current-slider.png) no-repeat;
+      background-size: cover;
+    }
+  }
+}
