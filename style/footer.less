@@ -58,6 +58,11 @@ footer {
 
 .footer--block-right {
   text-align: center;
+
+  .border {
+    background: #292929;
+    padding-top: 0px;
+  }
 }
 
 .border-block {
@@ -95,13 +100,26 @@ footer {
 
 @media only screen and (max-width: 767px) {
 
+  footer {
+    height: 550px;
+  }
+
+  .footer--block-right {
+    margin: 0;
+    margin-top: 50px;
+
+    .border {
+      width: 100%;
+    }
+  }
+
   footer::before, footer::after {
     content: "";
     width: 50%;
   }
 
   footer::after {
-    margin-top: -488px;
+    margin-top: -619px;
     float: right;
     border: 108px solid transparent;
     border-right-color: transparent;
@@ -149,70 +167,51 @@ footer {
   }
 }
 
-@media only screen and (max-width: 470px) {
-  footer::before {
-    margin-top: -344px;
-    border: 245px solid transparent;
-    border-bottom-color: transparent;
-    border-bottom-style: solid;
-    border-bottom-width: 750px;
-    border-left-color: transparent;
-    border-left-style: solid;
-    border-left-width: 750px;
-    border-bottom: 100px solid #292929;
-    border-left: 0 solid #292929;
-  }
-
-  footer::after {
-    margin-top: -679px;
-    border: 245px solid transparent;
-    border-right-color: transparent;
-    border-right-style: solid;
-    border-right-width: 750px;
-    border-bottom-color: transparent;
-    border-bottom-style: solid;
-    border-bottom-width: 750px;
-    border-bottom: 100px solid #292929;
-    border-right: 0 solid #292929;
-  }
-
+@media only screen and (max-width: 500px) {
   footer {
-    height: 450px;
+    &::after {
+      margin-top: -619px;
+      float: right;
+      border: 108px solid transparent;
+      border-right-color: transparent;
+      border-right-style: solid;
+      border-right-width: 750px;
+      border-bottom-color: transparent;
+      border-bottom-style: solid;
+      border-bottom-width: 750px;
+      border-bottom: 100px solid #292929;
+      border-right: 250px solid #292929;
+    }
+
+    &::before {
+      left: 0;
+      float: left;
+      margin-top: -100px;
+      border: 100px solid transparent;
+      border-bottom-color: transparent;
+      border-bottom-style: solid;
+      border-bottom-width: 750px;
+      border-left-color: transparent;
+      border-left-style: solid;
+      border-left-width: 750px;
+      border-bottom: 100px solid #292929;
+      border-left: 250px solid #292929;
+    }
   }
 
-  .border {
-    width: 120px;
+  .white-bottom--carousell--content--img img {
+    width: 100px;
+    height: 100px;
+    margin: 28px;
+    margin-right: 0;
   }
 }
 
-@media only screen and (max-width: 427px) {
 
-  //footer::before {
-  //  left: 0;
-  //  bottom: -1917px;
-  //  border: 220px solid transparent;
-  //  border-bottom-color: transparent;
-  //  border-bottom-style: solid;
-  //  border-bottom-width: 750px;
-  //  border-left-color: transparent;
-  //  border-left-style: solid;
-  //  border-left-width: 750px;
-  //  border-bottom: 100px solid #292929;
-  //  border-left: 0 solid #292929;
-  //}
-  //
-  //footer::after {
-  //  bottom: -1917px;
-  //  border: 215px solid transparent;
-  //  border-right-color: transparent;
-  //  border-right-style: solid;
-  //  border-right-width: 750px;
-  //  border-bottom-color: transparent;
-  //  border-bottom-style: solid;
-  //  border-bottom-width: 750px;
-  //  border-bottom: 100px solid #292929;
-  //  border-right: 0 solid #292929;
-  //}
+@media only screen and (max-width: 487px) {
+  .border {
+    width: 120px;
+  }
 }
 
 
